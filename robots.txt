@@ -1,0 +1,1 @@
+Sitemap: https://jonathanmc.github.io/covid-19-vis/sitemap.xml

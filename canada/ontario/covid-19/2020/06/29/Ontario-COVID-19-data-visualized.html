@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Ontario COVID-19 data | COVID-19 and SARS2 info</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Ontario COVID-19 data" />
+<meta name="author" content="Jonathan" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Ontario COVID-19 data" />
+<meta property="og:description" content="Ontario COVID-19 data" />
+<link rel="canonical" href="https://jonathanmc.github.io/covid-19-vis/canada/ontario/covid-19/2020/06/29/Ontario-COVID-19-data-visualized.html" />
+<meta property="og:url" content="https://jonathanmc.github.io/covid-19-vis/canada/ontario/covid-19/2020/06/29/Ontario-COVID-19-data-visualized.html" />
+<meta property="og:site_name" content="COVID-19 and SARS2 info" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-06-29T00:00:00-05:00" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Jonathan"},"headline":"Ontario COVID-19 data","dateModified":"2020-06-29T00:00:00-05:00","description":"Ontario COVID-19 data","datePublished":"2020-06-29T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://jonathanmc.github.io/covid-19-vis/canada/ontario/covid-19/2020/06/29/Ontario-COVID-19-data-visualized.html"},"url":"https://jonathanmc.github.io/covid-19-vis/canada/ontario/covid-19/2020/06/29/Ontario-COVID-19-data-visualized.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/covid-19-vis/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jonathanmc.github.io/covid-19-vis/feed.xml" title="COVID-19 and SARS2 info" /><link rel="shortcut icon" type="image/x-icon" href="/covid-19-vis/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Ontario COVID-19 data | COVID-19 and SARS2 info</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Ontario COVID-19 data" />
+<meta name="author" content="Jonathan" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Ontario COVID-19 data" />
+<meta property="og:description" content="Ontario COVID-19 data" />
+<link rel="canonical" href="https://jonathanmc.github.io/covid-19-vis/canada/ontario/covid-19/2020/06/29/Ontario-COVID-19-data-visualized.html" />
+<meta property="og:url" content="https://jonathanmc.github.io/covid-19-vis/canada/ontario/covid-19/2020/06/29/Ontario-COVID-19-data-visualized.html" />
+<meta property="og:site_name" content="COVID-19 and SARS2 info" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-06-29T00:00:00-05:00" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Jonathan"},"headline":"Ontario COVID-19 data","dateModified":"2020-06-29T00:00:00-05:00","description":"Ontario COVID-19 data","datePublished":"2020-06-29T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://jonathanmc.github.io/covid-19-vis/canada/ontario/covid-19/2020/06/29/Ontario-COVID-19-data-visualized.html"},"url":"https://jonathanmc.github.io/covid-19-vis/canada/ontario/covid-19/2020/06/29/Ontario-COVID-19-data-visualized.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://jonathanmc.github.io/covid-19-vis/feed.xml" title="COVID-19 and SARS2 info" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/covid-19-vis/">COVID-19 and SARS2 info</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/covid-19-vis/search/">Search</a><a class="page-link" href="/covid-19-vis/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Ontario COVID-19 data</h1><p class="page-description">Ontario COVID-19 data</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-06-29T00:00:00-05:00" itemprop="datePublished">
+        Jun 29, 2020
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Jonathan</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/covid-19-vis/categories/#canada">canada</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/covid-19-vis/categories/#ontario">ontario</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/covid-19-vis/categories/#covid-19">covid-19</a>
+        
+      
+      </p>
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Data-currency">Data currency </a></li>
+<li class="toc-entry toc-h1"><a href="#How-quickly-are-tests-coming-back?">How quickly are tests coming back? </a></li>
+<li class="toc-entry toc-h1"><a href="#COVID-19-cases,-by-age-and-by-various-variables">COVID-19 cases, by age and by various variables </a></li>
+<li class="toc-entry toc-h1"><a href="#Ontario-COVID-19-cases,-plotted-over-time">Ontario COVID-19 cases, plotted over time </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Summary-charts">Summary charts </a></li>
+<li class="toc-entry toc-h2"><a href="#All-the-information-in-the-charts-above,-but-breaking-out-each-age-group">All the information in the charts above, but breaking out each age group </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Gender,-broken-out-by-age">Gender, broken out by age </a></li>
+<li class="toc-entry toc-h3"><a href="#How-acquired">How acquired </a></li>
+<li class="toc-entry toc-h3"><a href="#Whether-cases-acquired-in-an-outbreak-setting">Whether cases acquired in an outbreak setting </a></li>
+<li class="toc-entry toc-h3"><a href="#Outcome">Outcome </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Selected-cities-over-time">Selected cities over time </a></li>
+<li class="toc-entry toc-h2"><a href="#Cases-over-time-for-selected-cities,-showing-gender-and-age">Cases over time for selected cities, showing gender and age </a></li>
+<li class="toc-entry toc-h2"><a href="#By-gender">By gender </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Various-cities,-by-outcome">Various cities, by outcome </a></li>
+<li class="toc-entry toc-h1"><a href="#Various-cities,-by-outbreak">Various cities, by outbreak </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2020-06-29-Ontario-COVID-19-data-visualized.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered celltag_papermill-error-cell-tag">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span style="color:red; font-family:Helvetica Neue, Helvetica, Arial, sans-serif; font-size:2em;">An Exception was encountered at '<a href="#papermill-error-cell">In [3]</a>'.</span></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>By Jonathan <a href="https://twitter.com/jmcrookston">https://twitter.com/jmcrookston</a> and Michal <a href="https://twitter.com/niemkiewiczIP">https://twitter.com/niemkiewiczIP</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Data-currency">
+<a class="anchor" href="#Data-currency" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data currency<a class="anchor-link" href="#Data-currency"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Case positive data from <a href="https://data.ontario.ca/dataset/confirmed-positive-cases-of-covid-19-in-ontario">here</a>. Testing and status of case data from <a href="https://data.ontario.ca/dataset/status-of-covid-19-cases-in-ontario">here</a>.</p>
+<ul>
+<li>accurate_episode_date = The field uses a number of dates entered in the Integrated Public Health Information System (iPHIS) to provide an approximation of onset date.</li>
+<li>case_reported_date = The date that the case was reported to the local public health unit (PHU).</li>
+<li>test_reported_date = The test reported date as indicated on the laboratory slip.</li>
+<li>specimen_date = Set to the earliest specimen date on record for the case, as indicated on the laboratory slip.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Date last retrieved:
+2021-03-13 16:37:11.876014
+Number of rows/cols:
+(316359, 18)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered celltag_papermill-error-cell-tag">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span id="papermill-error-cell" style="color:red; font-family:Helvetica Neue, Helvetica, Arial, sans-serif; font-size:2em;">Execution using papermill encountered an exception here and stopped:</span></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="How-quickly-are-tests-coming-back?">
+<a class="anchor" href="#How-quickly-are-tests-coming-back?" aria-hidden="true"><span class="octicon octicon-link"></span></a>How quickly are tests coming back?<a class="anchor-link" href="#How-quickly-are-tests-coming-back?"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="COVID-19-cases,-by-age-and-by-various-variables">
+<a class="anchor" href="#COVID-19-cases,-by-age-and-by-various-variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>COVID-19 cases, by age and by various variables<a class="anchor-link" href="#COVID-19-cases,-by-age-and-by-various-variables"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Ontario-COVID-19-cases,-plotted-over-time">
+<a class="anchor" href="#Ontario-COVID-19-cases,-plotted-over-time" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ontario COVID-19 cases, plotted over time<a class="anchor-link" href="#Ontario-COVID-19-cases,-plotted-over-time"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Summary-charts">
+<a class="anchor" href="#Summary-charts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Summary charts<a class="anchor-link" href="#Summary-charts"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="All-the-information-in-the-charts-above,-but-breaking-out-each-age-group">
+<a class="anchor" href="#All-the-information-in-the-charts-above,-but-breaking-out-each-age-group" aria-hidden="true"><span class="octicon octicon-link"></span></a>All the information in the charts above, but breaking out each age group<a class="anchor-link" href="#All-the-information-in-the-charts-above,-but-breaking-out-each-age-group"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Gender,-broken-out-by-age">
+<a class="anchor" href="#Gender,-broken-out-by-age" aria-hidden="true"><span class="octicon octicon-link"></span></a>Gender, broken out by age<a class="anchor-link" href="#Gender,-broken-out-by-age"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="How-acquired">
+<a class="anchor" href="#How-acquired" aria-hidden="true"><span class="octicon octicon-link"></span></a>How acquired<a class="anchor-link" href="#How-acquired"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Whether-cases-acquired-in-an-outbreak-setting">
+<a class="anchor" href="#Whether-cases-acquired-in-an-outbreak-setting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Whether cases acquired in an outbreak setting<a class="anchor-link" href="#Whether-cases-acquired-in-an-outbreak-setting"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Outcome">
+<a class="anchor" href="#Outcome" aria-hidden="true"><span class="octicon octicon-link"></span></a>Outcome<a class="anchor-link" href="#Outcome"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Selected-cities-over-time">
+<a class="anchor" href="#Selected-cities-over-time" aria-hidden="true"><span class="octicon octicon-link"></span></a>Selected cities over time<a class="anchor-link" href="#Selected-cities-over-time"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In the summary section there is a chart of cases over time with the various cities shown on one stacked box plot. That can be hard to read, so I broke them out here.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Cases-over-time-for-selected-cities,-showing-gender-and-age">
+<a class="anchor" href="#Cases-over-time-for-selected-cities,-showing-gender-and-age" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cases over time for selected cities, showing gender and age<a class="anchor-link" href="#Cases-over-time-for-selected-cities,-showing-gender-and-age"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>NOTE: X AND Y AXES ARE NOT THE SAME ACROSS CHARTS.</p>
+<p>For each city, top chart shows gender and bottom chart shows age.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="By-gender">
+<a class="anchor" href="#By-gender" aria-hidden="true"><span class="octicon octicon-link"></span></a>By gender<a class="anchor-link" href="#By-gender"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Various-cities,-by-outcome">
+<a class="anchor" href="#Various-cities,-by-outcome" aria-hidden="true"><span class="octicon octicon-link"></span></a>Various cities, by outcome<a class="anchor-link" href="#Various-cities,-by-outcome"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Various-cities,-by-outbreak">
+<a class="anchor" href="#Various-cities,-by-outbreak" aria-hidden="true"><span class="octicon octicon-link"></span></a>Various cities, by outbreak<a class="anchor-link" href="#Various-cities,-by-outbreak"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="jonathanmc/covid-19-vis"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/covid-19-vis/canada/ontario/covid-19/2020/06/29/Ontario-COVID-19-data-visualized.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/covid-19-vis/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/covid-19-vis/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/covid-19-vis/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Site with information about COVID-19 (disease) and SARS-CoV2 (the virus)</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/jonathanmc" title="jonathanmc"><svg class="svg-icon grey"><use xlink:href="/covid-19-vis/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/jmcrookston" title="jmcrookston"><svg class="svg-icon grey"><use xlink:href="/covid-19-vis/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
